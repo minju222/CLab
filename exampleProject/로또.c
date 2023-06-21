@@ -17,7 +17,7 @@ void inputf(int *sp, int len);
 int uniqueValue(int *sp, int index);
 void outputf(int *sp, int len);
 
-int main(void)
+int main01(void)
 {
     int su[7];
     int len=sizeof(su)/sizeof(su[0]);
@@ -91,6 +91,7 @@ void outputf(int *sp, int len)
 
    
 }
+
 int uniqueValue(int *sp, int index)
 {
     int temp;
@@ -98,7 +99,7 @@ int uniqueValue(int *sp, int index)
     do
     {
         //값 구하기
-        temp = rand() % 44 + 1;
+        temp = rand() % 45 + 1;
         printf("%d ", temp);
         dup = 0;
         //중복체크
