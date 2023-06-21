@@ -17,7 +17,7 @@ void inputf(int *sp, int len);
 int uniqueValue(int *sp, int index);
 void outputf(int *sp, int len);
 
-int main05(void)
+int main(void)
 {
     int su[7];
     int len=sizeof(su)/sizeof(su[0]);
@@ -81,21 +81,33 @@ void inputf(int *sp, int len)
         *(sp+i)=uniqueValue(sp,i);  //중복되지 않은값을 구해 오는 함수
     }
 }
+
 void outputf(int *sp, int len)
 {
- 	// 배열값을 출력하세요
+    for (int i = 0; i < len; i++) {
+        printf("%d ", *(sp+i));
+    }
+    printf("\n");
+
    
 }
 int uniqueValue(int *sp, int index)
 {
     int temp;
-    int dup,k;
+    int dup;
     do
     {
         //값 구하기
-        
+        temp = rand() % 44 + 1;
+        printf("%d ", temp);
+        dup = 0;
         //중복체크
-        
+        for (int i = 0; i <= index; i++) {
+            if (*(sp + i) == temp) {
+                dup = 1;
+                break;
+            }
+        }
         
     }
     while(dup==1);
