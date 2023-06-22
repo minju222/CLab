@@ -18,11 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main01.c" />
+    <ClCompile Include="main02.c" />
+    <ClCompile Include="main03.c" />
+    <ClCompile Include="main04.c" />
+    <ClCompile Include="main05.c" />
+    <ClCompile Include="main06.c" />
+    <ClCompile Include="오목.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bbbc5841-f031-448f-8bf1-23a145f972ae}</ProjectGuid>
-    <RootNamespace>chap04</RootNamespace>
+    <ProjectGuid>{195fae31-f512-4a7c-9d07-686a8719263d}</ProjectGuid>
+    <RootNamespace>chap05</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,20 +135,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="calc.c" />
-    <ClCompile Include="main01.c" />
-    <ClCompile Include="main02.c" />
-    <ClCompile Include="main03.c" />
-    <ClCompile Include="main04.c" />
-    <ClCompile Include="main05.c" />
-    <ClCompile Include="main06.c" />
-    <ClCompile Include="main06_1.c" />
-    <ClCompile Include="main07.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="calc.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -21,9 +21,6 @@
     <ClCompile Include="main02.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="calc.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="main03.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -36,16 +33,8 @@
     <ClCompile Include="main06.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main06_1.c">
+    <ClCompile Include="오목.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main07.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="calc.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
