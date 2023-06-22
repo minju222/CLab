@@ -19,7 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="workshop1.c" />
+    <ClCompile Include="workshop1_1.c" />
     <ClCompile Include="로또.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="workshop.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -17,7 +17,7 @@ void inputf(int *sp, int len);
 int uniqueValue(int *sp, int index);
 void outputf(int *sp, int len);
 
-int main01(void)
+int main_lotto(void)
 {
     int su[7];
     int len=sizeof(su)/sizeof(su[0]);

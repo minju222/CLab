@@ -127,8 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="calc.c" />
     <ClCompile Include="main01.c" />
     <ClCompile Include="main02.c" />
+    <ClCompile Include="main03.c" />
+    <ClCompile Include="main04.c" />
+    <ClCompile Include="main05.c" />
+    <ClCompile Include="main06.c" />
+    <ClCompile Include="main06_1.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h" />
