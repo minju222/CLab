@@ -25,6 +25,7 @@
     <ClCompile Include="main04.c" />
     <ClCompile Include="main05.c" />
     <ClCompile Include="main06.c" />
+    <ClCompile Include="main07.c" />
     <ClCompile Include="오목.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

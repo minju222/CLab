@@ -1,5 +1,15 @@
 extern index;
 
+//아래 함수랑 같음
+//void func(void(*fp)(char [10][50], int [10]), char name[10][50], int price[10]) {
+//	fp(name, price);
+//}
+
+void func(void(*fp)(char(*)[50], int*), char (*name)[50], int* price) {
+	fp(name, price);
+}
+
+
 void printBook(char name[10][50], int price[10]) {
 	for (int i = 0; i < index; i++) {
 		printf("[%d] %s %d\n", i, name[i], price[i]);

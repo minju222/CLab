@@ -6,7 +6,7 @@
 
 int index = 0;
 
-int main() {
+int main_workshop1() {
 	char name[10][50];
 	int price[10];
 
@@ -16,19 +16,23 @@ int main() {
 		scanf("%d", &menu);
 		switch (menu) {
 		case 1:
-			printBook(name, price);
+			func(printBook, name, price);
 			break;
 		case 2:
-			findBook(name, price);
+			//findBook(name, price);
+			func(findBook, name, price);
 			break;
 		case 3:
-			insertBook(name, price);
+			// insertBook(name, price);
+			func(insertBook, name, price);
 			break;
 		case 4:
-			updateBook(name, price);
+			// updateBook(name, price);
+			func(updateBook, name, price);
 			break;
 		case 5:
-			deleteBook(name, price);
+			//deleteBook(name, price);
+			func(deleteBook, name, price);
 			break;
 		case 0:
 			printf("프로그램이 종료되었습니다\n");

@@ -15,22 +15,29 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="로또.c">
+    <ClCompile Include="main01.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="workshop1.c">
+    <ClCompile Include="main02.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="workshop1_1.c">
+    <ClCompile Include="main03.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="끝말잇기.c">
+    <ClCompile Include="main04.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="workshop.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
+    <ClCompile Include="main05.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main06.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main07.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main08.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -18,20 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="workshop1.c" />
-    <ClCompile Include="workshop1_1.c" />
-    <ClCompile Include="끝말잇기.c" />
-    <ClCompile Include="로또.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="workshop.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5a2a1b4e-4c18-4b0b-ac2f-01994bdac549}</ProjectGuid>
-    <RootNamespace>exampleProject</RootNamespace>
+    <ProjectGuid>{fb95475e-36c4-42ab-acc4-6936034bcd4a}</ProjectGuid>
+    <RootNamespace>chap06</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -135,6 +126,16 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main01.c" />
+    <ClCompile Include="main02.c" />
+    <ClCompile Include="main03.c" />
+    <ClCompile Include="main04.c" />
+    <ClCompile Include="main05.c" />
+    <ClCompile Include="main06.c" />
+    <ClCompile Include="main07.c" />
+    <ClCompile Include="main08.c" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

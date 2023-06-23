@@ -113,12 +113,9 @@ int isVal(int pan[19][19], int r, int c) {
     }
 }
 
-int main() {
+int main_omok() {
     int pan[19][19] = { 0 };
     //오목 판을 그려준다
-
-    pan[5][5] = 1;
-    pan[7][7] = 2;
     printPan(pan);
 
     //반복{

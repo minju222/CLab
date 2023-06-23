@@ -36,5 +36,8 @@
     <ClCompile Include="오목.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="main07.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
