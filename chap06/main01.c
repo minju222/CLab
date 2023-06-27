@@ -16,7 +16,7 @@ int main01() {
 
 	//호출부
 	//함수 포인터 변수
-	int (*fp) (int, int);//return 타입+괄호꼭 넣기+ 받을수 있는 인자 타입 표기 -> int 두개를 받아서 int를 return하는 함수만 가리킬 수 있음
+	int (*fp) (Book);
 	fp = plus; //함수의 주소를 함수 포인터에 넣음(함수는 이름이 주소라 & 안붙임)
 	printf("%d\n", fp(10, 5)); //15
 	fp = minus;

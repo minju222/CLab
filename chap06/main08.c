@@ -14,8 +14,9 @@ struct person {
 };
 
 
-int main() {
+int main08() {
 	int a;
+	// 정적 선언 방식
 	struct person p = { "hong", 21 };
 	printf("%d\n", sizeof(struct person)); //구조체의 사이즈
 
@@ -24,13 +25,7 @@ int main() {
 	p.age = 22;
 	//p.name = "둘리"; // 변수명 복사가 안됨
 	strcpy(p.name, "둘리");
-	printf("%s %d\n", p.name, p.age);// hong 21
-
-
-
-
-
-
+	printf("%s %d\n", p.name, p.age);// 둘리 22
 
 	return 0;
 }
