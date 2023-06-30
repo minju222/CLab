@@ -5,6 +5,7 @@
 
 
 int index = 0;
+int N = 1;
 
 //void func(void(*fp)(char [10][50], int [10]), char name[10][50], int price[10]) {
 //	fp(name, price);
@@ -23,7 +24,7 @@ int main() {
 	//int price[10];
 	//insertBook에서 구현: 구조체 포인터 생성( 각 요소값을 malloc을 이용하여 생성하고 저장하는 형태로 변환)
 	//deleteBook에서 구현: 구조체 포인터가 가르키고 있는 구조체들의 메모리 해제
-	Book* books[10];
+	Book* books = malloc(sizeof(Book) * N);
 	loadFromFile(books);
 
 	while (1) {
@@ -47,7 +48,7 @@ int main() {
 			func(deleteBook, books);
 			break;
 		case 0:
-			printf("프로그램이 종료되었습니다\n");
+			printf("���α׷��� ����Ǿ����ϴ�\n");
 			saveToFile(books);
 			freeBooks(books);
 			exit(0);

@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "lib.h"
+
+
 extern  int index;
 extern  int N;
 extern Book* boos;
@@ -30,10 +32,10 @@ void findBook(Book** books) {
 }
 
 void insertBook(Book** books) {
-	/*if (index == N) {
+	if (index == N) {
 		books = realloc(books, sizeof(Book*) * N * 2);
 		N *= 2;
-	}*/
+	}
 
 	books[index] = (Book*)malloc(sizeof(Book));
 
@@ -71,7 +73,7 @@ void updateBook(Book** books){
 	}
 	else {
 		printf("새로운 책 이름을 입력하세요\n");
-		scanf("%s", books[d_index]);
+		scanf("%s", books[d_index]->name);
 		printf("새로운 책 가격을 입력하세요\n");
 		scanf("%d", &books[d_index]->price);
 		printf("새로운 책 저자를 입력하세요\n");
@@ -111,16 +113,48 @@ void deleteBook(Book** books) {
 	index--;
 }
 
-void loadFromFile(Book** books) {
-
+void saveToFile(Book** books) {
+	int i;
+	FILE* fd = fopen("book.text", "w");
+	if (fd == NULL) {
+		printf("File 쓰기 실패\n");
+		return;
+	}
+	for (i = 0; i < index; i++) {
+		fprintf(fd, "%s %d %s %s\n", books[i]->name, books[i]->price, books[i]->author, books[i]->publisher);
+	}
+	fclose(fd);
 };
 
 
-void saveToFile(Book** books) {
+void loadFromFile(Book** books) {
+	int res = 0;
 
+	FILE* fd = fopen("book.txt", "r");
+	if (fd == NULL) {
+		printf("File 쓰기에 실패했습니다\n");
+		fflush(stdout);
+		return;
+	}
+
+	while (1) {
+		Book* pb = (Book*)malloc(sizeof(Book));
+		res = fscanf(fd, "%s %d %s %s", pb->name, &pb->price,
+			pb->author, pb->publisher);
+		if (res == EOF) {
+			break;
+		}
+		books[index] = pb;
+		index++;
+
+	}
+	fclose(fd);
 };
 
 
 void freeBooks(Book** books) {
-
+	int i;
+	for (size_t i = 0; i < index; i++){	
+		free(books[i]);
+	}
 };

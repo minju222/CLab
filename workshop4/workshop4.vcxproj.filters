@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="main01.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main_1.c">
+    <ClCompile Include="main01_1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -28,6 +28,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="book.txt" />
+    <Text Include="product.txt" />
   </ItemGroup>
 </Project>
